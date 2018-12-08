@@ -7,22 +7,6 @@ var table = d3.select("table table-striped");
 
 var tbody = d3.select("tbody");
 
-// var row = tbody.append("tr");
-
-// datetime = tableData.map(row => row.datetime);
-// city = tableData.map(row => row.city);
-// state = tableData.map(row => row.state);
-// country = tableData.map(row => row.country);
-// shape = tableData.map(row => row.shape);
-// durationMinutes = tableData.map(row => row.durationMinutes)
-// comments = tableData.map(row => row.comments);
-
-// for (i = 0; i < 100; i++) {
-//     row.append("td").text(datetime[i]);
-//     };
-
-
-
 tableData.forEach((UFOsighting) => {
     var row = tbody.append("tr");
     Object.entries(UFOsighting).forEach(([key, value]) => {
